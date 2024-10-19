@@ -8,3 +8,8 @@ Given a matrix of indefinite dimension, take the best reward on it by moving onl
 The Monte Carlo estimation of π using a circle of radius 1 is a probabilistic technique that relies on random simulation to approximate the value of π.<br>
 ![Formula](images/image_03.png)<br>
 Estimate pi and create animated graph of real-time result (optional)
+
+## 04_polybius_square.py
+The Polybius Square cipher is a simple substitution cipher that makes use of a 5x5 square grid. The letters A-Z are written into the grid, with "I" and "J" typically sharing a slot (as there are 26 letters and only 25 slots).
+To encipher a message, each letter is merely replaced by its row and column numbers in the grid.
+Create a function that takes a plaintext or ciphertext message, and returns the corresponding ciphertext or plaintext.
