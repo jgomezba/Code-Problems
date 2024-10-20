@@ -28,7 +28,6 @@ def decode_from_numbers(matrix:list, numbers:str) -> str:
     return final_decoder
 
 def decode_from_text(matrix:list, text:str) -> str:
-    
     final_decoder = ""
     
     for letter in text:
@@ -45,6 +44,12 @@ def decode_from_text(matrix:list, text:str) -> str:
     return final_decoder
         
 
-polybius_matrix = get_matrix_from_alphabet()
-print(decode_from_text(polybius_matrix, "HARRY"))
-print(decode_from_numbers(polybius_matrix, "2311424254"))
+def decode_text(matrix:list, text:str) -> str:
+    if text.isdigit():
+        return decode_from_numbers(matrix, text)
+    else:
+        return decode_from_text(matrix, text)
+
+if __name__ == "__main__":
+    polybius_matrix = get_matrix_from_alphabet()
+    print(decode_text(polybius_matrix, "2311424254"))
