@@ -13,3 +13,6 @@ Estimate pi and create animated graph of real-time result (optional)
 The Polybius Square cipher is a simple substitution cipher that makes use of a 5x5 square grid. The letters A-Z are written into the grid, with "I" and "J" typically sharing a slot (as there are 26 letters and only 25 slots).
 To encipher a message, each letter is merely replaced by its row and column numbers in the grid.
 Create a function that takes a plaintext or ciphertext message, and returns the corresponding ciphertext or plaintext.
+
+## 05_knigths_tour.py
+A knight's tour is a sequence of moves of a knight on a chessboard such that the knight visits every square exactly once. If the knight ends on a square that is one knight's move from the beginning square (so that it could tour the board again immediately, following the same path), the tour is "closed", or "re-entrant"; otherwise, it is "open"
